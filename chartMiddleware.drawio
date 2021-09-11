@@ -1,0 +1,117 @@
+<mxfile host="65bd71144e">
+    <diagram id="KGGMOfz4ZrT5S-lF1KPY" name="Page-1">
+        <mxGraphModel dx="1415" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="Calls" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="116" vertex="1" connectable="0">
+                    <mxGeometry x="0.2564" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Component" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="30" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="returns an" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Action Creatror" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="170" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="2) If returned data is an Action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7" target="9" edge="1">
+                    <mxGeometry x="-0.0714" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="620" y="320"/>
+                            <mxPoint x="620" y="380"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Actions of two flavors" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="290" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="And Then dispatched to all&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="680" y="420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Sends Changes back up to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="11" edge="1">
+                    <mxGeometry x="-0.2604" relative="1" as="geometry">
+                        <mxPoint x="725" y="70" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="820" y="640"/>
+                            <mxPoint x="820" y="70"/>
+                        </Array>
+                        <mxPoint y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="State" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="635" y="610" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="updates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="12" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Reducers" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="645" y="490" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="240" width="320" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="22" source="16" edge="1">
+                    <mxGeometry x="0.4128" relative="1" as="geometry">
+                        <mxPoint x="620" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="50" y="60"/>
+                            <mxPoint x="50" y="280"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="100" value="Dispatech Passed as Argument" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="24" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3798" y="3" relative="1" as="geometry">
+                        <mxPoint x="57" y="-149" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="Actions" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="22" vertex="1">
+                    <mxGeometry x="210" y="130" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="Using Dispatch we can run&lt;br&gt;Asychronous tasks like API calls&amp;nbsp;&lt;br&gt;and inside .then(0 dispatch other actions" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="22" vertex="1">
+                    <mxGeometry y="180" width="320" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="MIDDLEWARE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="210" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="Since the Redux action --&amp;gt;Reducer flow&lt;br&gt;is SYNCHRONOUS we can employ&lt;br&gt;redux thunk to convert it to ASYNCHRONOUS&lt;br&gt;and make asynchronous api calls from&lt;br&gt;&amp;nbsp;our actions creators or inside .then() dispatch other useful actions&lt;br&gt;or permit things like promises into the functionality&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="65" width="370" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Thunk = function from a function" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="250" width="190" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Thunks" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="260" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="7" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450" y="309.99727272727273" as="sourcePoint"/>
+                        <mxPoint x="119.99999999999989" y="310.02" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="650" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" value="1) If returned data is a Function a.k.a. THUNK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="114" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3111" y="3" relative="1" as="geometry">
+                        <mxPoint x="-69" y="-3" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
