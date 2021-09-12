@@ -12,6 +12,8 @@ import App from "./App";
 
 //2. Create a store that includes thunk and logger middleware support.
 const store = createStore(reducer, applyMiddleware(logger, thunk));
+console.log('index.js ln:15 STORE STORE STORE', store);
+console.log('index.js ln:16 store.getState()', store.getState());
 
 const { worker } = require('./mocks/browser');
 worker.start();
